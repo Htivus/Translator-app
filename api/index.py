@@ -7,14 +7,14 @@ import numpy as np
 app = Flask(__name__)
 
 # Load the ML model
-model = load_model('model.h5')
+# model = load_model('model.h5')
 
-# Load the tokenizers
-with open('kan_tokenizer.pkl', 'rb') as f:
-    tokenizer_kan = load(f)
+# # Load the tokenizers
+# with open('kan_tokenizer.pkl', 'rb') as f:
+#     tokenizer_kan = load(f)
 
-with open('tulu_tokenizer.pkl', 'rb') as f:
-    tokenizer_tulu = load(f)
+# with open('tulu_tokenizer.pkl', 'rb') as f:
+#     tokenizer_tulu = load(f)
 
 @app.route('/')
 def home():
